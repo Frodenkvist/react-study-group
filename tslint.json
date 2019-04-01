@@ -1,0 +1,36 @@
+{
+  "extends": ["tslint-react"],
+  "rules": {
+    "max-line-length": {
+      "options": [120]
+    },
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": false,
+    "jsx-no-multiline-js": false,
+    "prefer-const": true,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+    },
+    "curly": true,
+    "radix": true,
+    "triple-equals": true,
+    "semicolon": [true, "always"],
+    "no-relative-imports": [true, "allow-siblings"]
+  },
+  "jsRules": {
+    "max-line-length": {
+      "options": [120]
+    }
+  }
+}
