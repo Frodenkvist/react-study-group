@@ -10,7 +10,7 @@ const context = React.createContext<AppContext>({
   setLoggedInUser: () => {}
 });
 
-export const AppContextProvoder = context.Provider;
+export const AppContextProvider = context.Provider;
 
 const AppContextConsumer = context.Consumer;
 

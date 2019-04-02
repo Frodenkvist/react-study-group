@@ -4,6 +4,6 @@ Example project for react study group, to show of some build tools, optimization
 
 ## Getting Started
 
-To start the application do:
-`npm install`
+To start the application do: <br>
+`npm install` <br>
 `npm run dev`

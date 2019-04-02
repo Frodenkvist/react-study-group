@@ -1,9 +1,12 @@
 .container {
   display: flex;
   flex-direction: row;
+  list-style: none;
 }
 
 .link {
   padding-right: 0.5em;
   padding-left: 0.5em;
+  text-decoration: none;
+  background-color: transparent;
 }

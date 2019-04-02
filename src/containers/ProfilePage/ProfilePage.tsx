@@ -26,4 +26,5 @@ class ProfilePageComp extends React.Component<Props> {
   }
 }
 
-export const ProfilePage = withAppContext(ProfilePageComp);
+const ProfilePage = withAppContext(ProfilePageComp);
+export default ProfilePage;
