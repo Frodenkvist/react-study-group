@@ -3,7 +3,7 @@ import * as styles from './App.scss';
 
 import { HashRouter, Route } from 'react-router-dom';
 import { NavBar } from 'components/NavBar/NavBar';
-import { AppContextProvoder, AppContext } from 'AppContext/appContext';
+import { AppContextProvider, AppContext } from 'AppContext/appContext';
 import { Async } from 'components/Async/Async';
 
 const LoginPage = (props: any) => (
@@ -43,14 +43,14 @@ export class App extends React.Component<{}, State> {
 
     return (
       <HashRouter>
-        <AppContextProvoder value={appContext}>
+        <AppContextProvider value={appContext}>
           <NavBar />
           <div className={styles.container}>
             <Route exact={true} path="/" />
             <Route path="/login" component={LoginPage} />
             <Route path="/profile" component={ProfilePage} />
           </div>
-        </AppContextProvoder>
+        </AppContextProvider>
       </HashRouter>
     );
   }

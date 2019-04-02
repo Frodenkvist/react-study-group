@@ -3,7 +3,7 @@
     "@babel/react",
     "@babel/typescript",
     [
-      "@babel/env",
+      "@babel/preset-env",
       {
         "modules": false,
         "useBuiltIns": "usage",
