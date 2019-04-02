@@ -1,4 +1,6 @@
 import * as React from 'react';
+import * as styles from './NavBar.scss';
+
 import { Link } from 'react-router-dom';
 import { withAppContext, AppContext } from 'AppContext/appContext';
 
@@ -11,13 +13,17 @@ class NavBarComp extends React.Component<Props> {
     const { appContext } = this.props;
 
     return (
-      <ul>
+      <ul className={styles.container}>
         <li>
-          <Link to="/login">Login</Link>
+          <Link className={styles.link} to="/login">
+            Login
+          </Link>
         </li>
         {appContext.loggedInUser && (
           <li>
-            <Link to="/profile">Profile</Link>
+            <Link className={styles.link} to="/profile">
+              Profile
+            </Link>
           </li>
         )}
       </ul>

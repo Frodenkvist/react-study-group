@@ -87,4 +87,5 @@ class LoginPageComp extends React.Component<Props, State> {
   }
 }
 
-export const LoginPage = withAppContext(LoginPageComp);
+const LoginPage = withAppContext(LoginPageComp);
+export default LoginPage;
